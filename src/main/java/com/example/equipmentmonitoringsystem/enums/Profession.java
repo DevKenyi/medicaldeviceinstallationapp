@@ -1,11 +1,12 @@
 package com.example.equipmentmonitoringsystem.enums;
 
 public enum Profession {
-    md("MD"),
-    doctor("DOCTOR"),
-    biomedicalEng("BIOMEDICAL ENGINEER"),
-    technician("TECHNICIAN"),
-    other("OTHERS");
+    MD("MD"),
+    DOCTOR("DOCTOR"),
+    BIOMEDICAL_ENGINEER("BIOMEDICAL ENGINEER"),
+
+    TECHNICIAN("TECHNICIAN"),
+    OTHERS("OTHERS");
 
     private String portfolio;
 
