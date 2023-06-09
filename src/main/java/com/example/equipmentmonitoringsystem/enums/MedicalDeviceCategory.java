@@ -2,7 +2,7 @@ package com.example.equipmentmonitoringsystem.enums;
 
 public enum MedicalDeviceCategory {
     surgical("SURGICAL"),
-    plants ("OXYGEN PLANT"),
+     Plants("OXYGEN PLANT"),
     diagnostics("DIAGNOSITICS"),
     radiography("RADIOGRAPHY"),
     neonatal("NEONATAL"),

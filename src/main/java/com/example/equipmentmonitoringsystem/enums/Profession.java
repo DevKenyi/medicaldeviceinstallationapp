@@ -3,7 +3,7 @@ package com.example.equipmentmonitoringsystem.enums;
 public enum Profession {
     MD("MD"),
     DOCTOR("DOCTOR"),
-    BIOMEDICAL_ENGINEER("BIOMEDICAL ENGINEER"),
+BIOMEDICAL_ENGINEER("BIOMEDICAL ENGINEER"),
 
     TECHNICIAN("TECHNICIAN"),
     OTHERS("OTHERS");

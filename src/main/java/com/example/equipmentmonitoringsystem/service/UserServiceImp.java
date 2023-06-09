@@ -14,6 +14,16 @@ public class UserServiceImp implements Service {
     private UserRepo userRepo;
     @Override
     public ResponseEntity<User> saveUser(User user) {
+        User saveUser = new User();
+        if(user.getEmail()!= null){
+            user.setFirstname(user.getFirstname());
+            user.setLastname(user.getLastname());
+            user.setEmail(user.getEmail());
+            user.setProfession(user.getProfession());
+            user.setHealthFacility(user.getHealthFacility());
+            user.setPhoneNumber(user.getPhoneNumber());
+            user.setEmail(user.getEmail());
+        }
         return new ResponseEntity<>(userRepo.save(user), HttpStatus.OK);
     }
 
@@ -21,4 +31,5 @@ public class UserServiceImp implements Service {
     public ResponseEntity<List<User>> listOfUsers() {
         return new ResponseEntity<>(userRepo.findAll(), HttpStatus.OK);
     }
+
 }

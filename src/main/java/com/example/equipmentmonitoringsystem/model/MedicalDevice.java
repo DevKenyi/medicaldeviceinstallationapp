@@ -14,10 +14,20 @@ import java.time.LocalDate;
 @Entity
 public class MedicalDevice {
     @Id
+    @Column(name = "device id")
     private Long id;
+    @Column(name = "device name")
+
     private String deviceName;
+    @Column(name = "serial number")
+
     private String serialNumber;
+    @Column(name = "installation date ")
     private LocalDate dateOfInstallation;
+
+    private LocalDate maintenanceDate;
+    @Column(name = "equipment status ")
+    private String equipmentStatus;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "facility_id")
     @JsonBackReference
